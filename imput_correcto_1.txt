@@ -1,0 +1,6 @@
+para i desde 1 hasta 3 hacer {
+    imprimir("HOLA");
+    salir;
+    imprimir("ADIOS");
+    
+}

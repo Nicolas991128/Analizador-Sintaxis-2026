@@ -1,0 +1,31 @@
+ /*{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Ejecutar Analizador",
+            "skipFiles": ["<node_internals>/**"],
+            "program": "${workspaceFolder}/index.js",
+            "console": "internalConsole",
+            //"antlr4.viewer.onSave": true,
+            //"antlr4.viewer.alwaysShow": true
+        }
+    ]
+} */
+
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Ejecutar Analizador",
+            "type": "antlr-debug",
+            "request": "launch",
+            "input": "${workspaceFolder}/input.txt",
+            "grammar": "${workspaceFolder}/grammar/Lenguaje.g4",
+            "startRule": "programa",
+            "printParseTree": true,
+            "visualParseTree": true
+        }
+    ]
+}
